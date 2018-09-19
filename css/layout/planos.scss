@@ -1,0 +1,74 @@
+/** Planos **/
+.planos {
+  background: $cor-auxiliar;
+}
+
+.planos h2 {
+  color: $cor-branca;
+}
+
+.plano {
+  background: $cor-branca;
+  width: multiplica-pela-fonte(18);
+  display: inline-block;
+  margin: 1em 0 0 1.4em;
+  padding-bottom: multiplica-pela-fonte(2);
+}
+
+.plano:hover {
+  background: #dedede;
+}
+
+.plano h3 {
+  color: $cor-branca;
+  font-size: multiplica-pela-fonte(1.8);
+  background: $cor-padrao;
+  text-align: center;
+  height: multiplica-pela-fonte(2);
+  padding-top: multiplica-pela-fonte(.6);
+  margin-top: 0;
+}
+
+.plano div {
+  text-align: center;
+  color: $cor-padrao;
+  font-size: 2.75em;
+}
+
+.itens-plano {
+  padding-left: 1.2em;
+
+  li{
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: .5em;
+    width: 14.8em;
+
+    &:last-child{
+      border: 0;
+    }
+  }
+  span{
+    float: right;
+  }
+
+}
+
+.plano button {
+  background: $cor-padrao;
+  border: 0;
+  color: $cor-branca;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  @include border-radius(10px);
+  @include box-shadow(black 0 2px 5px);
+  margin-left: 2em;
+}
+
+@include all-sprite-sprites;
+.sprite-icone-ok, .sprite-icone-x {
+  width: 18px;
+  height: 18px;
+}
